@@ -649,8 +649,8 @@ importers:
         specifier: ^2.0.1
         version: 2.0.7
       '@types/gulp-sass':
-        specifier: ^5.0.0
-        version: 5.0.4
+        specifier: ^6.0.0
+        version: 6.0.0
       cssnano:
         specifier: ^6.0.5
         version: 6.1.2(postcss@8.5.6)
@@ -2581,6 +2581,9 @@ packages:
   '@rtsao/scc@1.1.0':
     resolution: {integrity: sha512-zt6OdqaDoOnJ1ZYsCYGt9YmWzDXl4vQdKTyJev62gFhRGKdx7mcT54V9KIjg+d2wi9EXsPvAPKe7i7WjfVWB8g==}
 
+  '@sass/types@1.97.2':
+    resolution: {integrity: sha512-QmRnAFAF5ehIudOwivet2FmDolgGMaRFnm99LtJuC4bbn6sbBZc2I+JaE1Eb/VHs/uzGIpoU1NWfvGZdExV/qQ==}
+
   '@shikijs/core@2.5.0':
     resolution: {integrity: sha512-uu/8RExTKtavlpH7XqnVYBrfBkUc20ngXiX9NSrBhOVZYv/7XQRKUyhtkeflY5QsxC0GbJThCerruZfsUaSldg==}
 
@@ -2675,8 +2678,8 @@ packages:
   '@types/gulp-rename@2.0.7':
     resolution: {integrity: sha512-W1xIGdui1w4AB1ylt/b8jrpV1MTNfeKmMFfJXsN/NOtSHjRg2w4Wp9H96J+Ld9tZenTtU0u5LatpGFJvOBN5EA==}
 
-  '@types/gulp-sass@5.0.4':
-    resolution: {integrity: sha512-wDgpyM9fRq/k7kn1ZGcoY69Pj8+AlB50U9TKmBdbmHUduy+4b7WZ1zrDl4df43W+IqJegEgen6XAKO2+/RQILA==}
+  '@types/gulp-sass@6.0.0':
+    resolution: {integrity: sha512-i+aa3mmC7Xoi5Al8zsFGKtYnk7AulMvQeluO3CRiRvqvYg1eyra6xerfxobXjmHGlJsWnNx71OTQa3yH33FH4w==}
 
   '@types/gulp@4.0.18':
     resolution: {integrity: sha512-IqkYa4sXkwH2uwqO2aXYOoAisJpLX13BPaS6lmEAoG4BbgOay3qqGQFsT9LMSSQVMQlEKU7wTUW0sPV46V0olw==}
@@ -2722,9 +2725,6 @@ packages:
 
   '@types/ms@2.1.0':
     resolution: {integrity: sha512-GsCCIZDE/p3i96vtEqx+7dBUGXrc7zeSK3wwPHIaRThS+9OhWIXRqzs4d6k1SVU8g91DrNRWxWUGhp5KXQb2VA==}
-
-  '@types/node-sass@4.11.8':
-    resolution: {integrity: sha512-dWWMGPX8uselSQ1MLzDvQnVz5Qy1pe7SJuUl1Yqi2NCNRkrk5DmHlP44VZmTWm+buR2T217+5zEAPbAmTwKIOQ==}
 
   '@types/node@13.13.52':
     resolution: {integrity: sha512-s3nugnZumCC//n4moGGe6tkNMyYEdaDBitVjwPxXmR5lnMG5dHePinH2EdxkG3Rh1ghFHHixAG4NJhpJW1rthQ==}
@@ -8281,10 +8281,12 @@ packages:
   tar@6.2.1:
     resolution: {integrity: sha512-DZ4yORTwrbTj/7MZYq2w+/ZFdI6OZ/f9SFHR+71gIVUZhOQPHzVCLpvRnPgyaMpfWxxk/4ONva3GQSyNIKRv6A==}
     engines: {node: '>=10'}
+    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exhorbitant rates) by contacting i@izs.me
 
   tar@7.5.2:
     resolution: {integrity: sha512-7NyxrTE4Anh8km8iEy7o0QYPs+0JKBTj5ZaqHg6B39erLg0qYXN3BijtShwbsNSvQ+LN75+KV+C4QR/f6Gwnpg==}
     engines: {node: '>=18'}
+    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exhorbitant rates) by contacting i@izs.me
 
   text-decoder@1.2.3:
     resolution: {integrity: sha512-3/o9z3X0X0fTupwsYvR03pJ/DjWuqqrfwBgTQzdWDiQSm9KitAyz/9WqsT2JQW7KV2m+bC2ol/zqpW37NHxLaA==}
@@ -11341,6 +11343,8 @@ snapshots:
 
   '@rtsao/scc@1.1.0': {}
 
+  '@sass/types@1.97.2': {}
+
   '@shikijs/core@2.5.0':
     dependencies:
       '@shikijs/engine-javascript': 2.5.0
@@ -11450,10 +11454,10 @@ snapshots:
       '@types/node': 22.19.3
       '@types/vinyl': 2.0.12
 
-  '@types/gulp-sass@5.0.4':
+  '@types/gulp-sass@6.0.0':
     dependencies:
+      '@sass/types': 1.97.2
       '@types/node': 22.19.3
-      '@types/node-sass': 4.11.8
 
   '@types/gulp@4.0.18':
     dependencies:
@@ -11507,10 +11511,6 @@ snapshots:
   '@types/mdurl@2.0.0': {}
 
   '@types/ms@2.1.0': {}
-
-  '@types/node-sass@4.11.8':
-    dependencies:
-      '@types/node': 22.19.3
 
   '@types/node@13.13.52': {}
 
